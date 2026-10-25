@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     DATABASE_NAME: str = "tixstern"
     DATABASE_USER: str = "postgres"
     DATABASE_PASSWORD: str
+    JWT_SECRET_KEY: str
 
     model_config = SettingsConfigDict(
         env_file=".env",
